@@ -1,0 +1,65 @@
+/* Centering the login form */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Styling the login form */
+  .login-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input fields */
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Error message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Login button */
+  .login-button {
+    background-color: #f783b7;
+    color: rgb(11, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #f934cb;
+  }
+  
+  /* Sign-up button */
+  .signup-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .signup-button:hover {
+    text-decoration: underline;
+  }
+  
