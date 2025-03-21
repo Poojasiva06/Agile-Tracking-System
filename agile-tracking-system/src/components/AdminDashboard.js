@@ -79,8 +79,8 @@ const AdminDashboard = () => {
             <ul>
               {selectedScrum.tasks.map((task, taskIndex) => (
                 <li key={taskIndex}>
-                  <p><strong>Task Title:</strong> {task.taskTitle}</p>
-                  <p><strong>Task Description:</strong> {task.taskDescription}</p>
+                  <p><strong>Title:</strong> {task.taskTitle}</p>
+                  <p><strong>Description:</strong> {task.taskDescription}</p>
                   <p>
                     <strong>Status:</strong> 
                     <span style={{ marginLeft: "5px" }}>{taskStatuses[task.taskTitle]}</span>
@@ -94,7 +94,7 @@ const AdminDashboard = () => {
                       <option value="Done">Done</option>
                     </select>
                   </p>
-                  <p><strong>Assigned To:</strong> {task.assignedUser}</p>
+                  <p><strong>Assigned User:</strong> {task.assignedUser}</p>
                 </li>
               ))}
             </ul>

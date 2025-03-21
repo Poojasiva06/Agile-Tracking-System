@@ -1,10 +1,16 @@
-//components/Navbar.js
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import "./Navbar.css";
+
 const Navbar = () => {
   const { user, logout } = useAuth();
+  const navigate = useNavigate(); // Initialize navigate function
+
+  const handleLogout = () => {
+    logout(); // Call the logout function from AuthContext
+    navigate("/welcome"); // Redirect to the Welcome page
+  };
 
   return (
     <nav>
@@ -19,7 +25,7 @@ const Navbar = () => {
       </Link>
       
       {user ? (
-        <button onClick={logout}>Logout</button>
+        <button onClick={handleLogout}>Logout</button>
       ) : (
         <Link to="/login">Login</Link>
       )}

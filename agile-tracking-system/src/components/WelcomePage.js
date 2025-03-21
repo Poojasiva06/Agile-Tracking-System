@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import "./Welcomepage.css"; // Import CSS file
+import "./Welcomepage.css";
 
 const WelcomePage = () => {
   const navigate = useNavigate();
@@ -49,9 +49,7 @@ const WelcomePage = () => {
   return (
     <div className="welcome-container">
       <h2 className="welcome-header">Welcome to Agile Tracking System</h2>
-      <p className="welcome-description">
-        Here we can track and manage our scrum teams effectively.
-      </p>
+     
 
       {!showScrums && !selectedScrum && (
         <button className="button" onClick={handleViewScrums}>

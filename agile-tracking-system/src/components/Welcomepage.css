@@ -21,7 +21,7 @@
   
   .button {
     background-color: #f59fd2;
-    color: rgb(16, 1, 1);
+    color: rgb(247, 234, 234);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -32,7 +32,7 @@
   }
   
   .button:hover {
-    background-color: #f337cd;
+    background-color: #9ea1d4;
   }
   
   .scrum-list {

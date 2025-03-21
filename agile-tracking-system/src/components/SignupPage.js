@@ -23,8 +23,8 @@ const SignupPage = () => {
     }
 
     // Password validation
-    if (password.length < 6) {
-      setError("Password must be at least 6 characters long.");
+    if (password.length < 4) {
+      setError("Password must be at least 4 characters long.");
       return;
     }
 
