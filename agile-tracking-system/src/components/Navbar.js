@@ -5,11 +5,11 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
-  const navigate = useNavigate(); // Initialize navigate function
+  const navigate = useNavigate(); 
 
   const handleLogout = () => {
-    logout(); // Call the logout function from AuthContext
-    navigate("/welcome"); // Redirect to the Welcome page
+    logout(); 
+    navigate("/welcome"); 
   };
 
   return (
